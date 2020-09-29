@@ -1,0 +1,321 @@
+
+body
+{
+	margin:0px 100px;
+	background-color:#E5ECE5;
+	font-family:"Raleway",Andale Mono,Monospace;
+	font-size:14px;
+}
+
+div.leftList 
+{
+	width: 50px; 
+  position: fixed; 
+  margin-left: 90%;
+  border-radius:5px;
+ 
+}
+
+div.leftList > i
+{
+	display:block;
+	font-size:25px; 
+	color:#C3C7C7;
+	padding:10px;
+	margin:20px 0;
+	border-width:0 0 1px 0;
+	border-style: solid;
+	border-color:#E5ECE5;
+}
+
+h3
+{
+	font-size:16px;
+	font-weight:900;
+	
+}
+
+
+div.insideDiv1 > i
+{
+	font-size:50px; 
+	color:#373D3D; 
+	display:block;
+	padding:30px 0 10px 0;
+	transition:0.8s padding;	
+}
+div.insideDiv1 >i:hover
+{
+	padding:10px 0 20px 0;
+	
+}
+
+
+
+div
+{
+	display:block;
+	background-color:#fff;
+	
+	margin:100px 0;
+	
+}
+
+
+div.insideDiv1
+{
+	display:inline-block;
+	margin:10px 0;
+	padding:5px;
+	border-width:0 2px 0 0;
+	border-style:solid;
+	border-color:#e2e2e2;
+	text-align:center;
+	font-size:14px;
+}
+
+	
+div.Div2
+{
+	display:inline-block;
+	background-color:#F5F7F7;
+	width:100%;
+	text-align:center;
+	margin:50px 0 0 0;
+}
+
+div.insideDiv2
+{
+	display:inline-block;
+	background-color:#F5F7F7;
+	width:50%;
+	height:500px;
+	margin:50px 0 0 0;
+	text-align:left;
+	
+}
+
+h3
+{
+	display:inline-block;
+	width:400px;
+	height:50px;
+	padding:20px 0 0 0;
+	margin:0 auto;
+	text-align:center;
+	color:#000;
+	
+}
+.div2Img
+{
+	display:inline-block;
+	float:left;
+	margin:-120px 50px;
+	width:450px;
+	height:550px;
+	
+}
+
+#centered
+{
+	display:inline-block;
+	width:400px;
+	height:50px;
+	margin:0 auto;
+	text-align:center;
+	color:#8B9D8B;
+}
+
+
+#div02
+{
+	display:inline-block;
+	color:#8B9D8B;
+	margin:5px 20px ;
+	padding:5px 20px;
+	
+}
+
+span
+{
+	display: flex;
+	flex-direction: row;
+	color:#b8b8b8;
+	margin:100px 0;
+	padding:30px 0;
+	
+}
+
+span:before, span:after
+{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #e2e2e2;
+  margin: auto;
+}
+span:before 
+{
+	  margin:0 15px 5px 30px;
+}
+span:after 
+{
+   margin:0 30px 5px 15px;
+}
+
+.buttonText
+{
+	display:inline-block;
+	background-color:#47c9e5;
+	color:#fff;
+	padding:12px;
+	font-size:18px;
+	font-weight:700px;
+	border-radius:25px;
+	transition:0.3s letter-spacing;
+}
+.buttonText:hover
+{
+	letter-spacing:3px;
+}
+
+
+
+.slider
+{
+	margin:0 0 0 0;
+	background-color:#F5F7F7;
+	width:100%;
+	height:300px;
+	overflow:hidden;
+}
+
+.slider::before,.slider::after
+{
+	content: "";
+	position:absolute;
+	width:200px;
+	height:120px;
+	
+
+}
+ .slider-track
+ {
+	 display:flex;
+	 background-color:#F5F7F7;
+ }
+ 
+
+
+.slide
+{
+	display:flex;
+	background-color:#F5F7F7;
+	margin:0;
+	padding:0;
+	animation:scroll 4s infinite linear;
+	
+}
+
+ .slide img
+{
+	display:flex;
+	width:240px;
+	height:200px;
+	margin:0 30px;
+	
+}
+
+ 
+ 
+ @keyframes scroll{
+	 0% {
+		 transform: translateX(20px);
+	 }
+	 
+	 35% {
+		 transform: translateX(-100px);
+	 }
+	 
+	 70%{transform: translateX(100px);
+	 }
+		 
+	 100% {
+		 transform: translateX(20px);
+	 }
+ }
+
+.typewriter 
+{
+  display:flex;
+  text-align: left;
+  color: #3f3f3f;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  border-color: #67C3E5;
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+	typing 10s steps(40, end) infinite,
+	blink-caret 10s steps(40, end) infinite;
+	
+}
+
+/* The typing effect */
+@keyframes typing {
+  0%,100% { width: 0 }
+  50% { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from { border-color: #67C3E5; }
+  to{ border-color: transparent }
+} 
+
+/*
+img
+{
+	display:inline-block;
+	float:left;
+	margin:-120px 50px;
+	width:450px;
+	height:550px;
+}
+.ourPartnerImages
+{
+	display:inline-block;
+	margin:10px;
+	width:239px;
+	height:199px;
+}
+
+div.class1 
+{
+	display:inline-block;
+	height:100px;
+	width:100px;
+	background-color:#fff;
+	border-top: solid 2px #f2f2f2;
+	padding-top:20px;
+	/*margin-top:-20px;
+
+}
+
+span.class2
+{
+	
+	text-align: center;
+	z-index:1;
+	padding: 0 20px;
+	background:#f2f2f2;
+}
+
+span.class2:before
+{
+	position:absolute;
+	content:"";
+	border-top:2px solid #dfdfdf;
+	margin:0 auto;
+	z-index:-1;
+}
+*/
